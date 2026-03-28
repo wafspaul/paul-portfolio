@@ -36,7 +36,7 @@ const Hero: React.FC = () => {
         Paul Wamocha
       </h1>
       <p className="text-xl md:text-2xl font-light text-bronze uppercase tracking-widest mb-6 max-w-2xl">
-        AI for Education & Digital Inclusion | Program Manager
+        AI for Education & Digital Inclusion Specialist
       </p>
 
       <div className="flex flex-wrap justify-center gap-6 text-gray-400 mb-8">

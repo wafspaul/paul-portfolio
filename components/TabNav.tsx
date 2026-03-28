@@ -7,6 +7,14 @@ interface TabNavProps {
   onTabChange: (tab: TabType) => void;
 }
 
+const TAB_LABELS: Record<TabType, string> = {
+  [TabType.BIO]: 'BIO',
+  [TabType.COMMUNITY]: 'PARTNERSHIPS',
+  [TabType.IMPACT]: 'IMPACT',
+  [TabType.INNOVATIONS]: 'INNOVATIONS',
+  [TabType.TRAINING]: 'TRAINING',
+};
+
 const TabNav: React.FC<TabNavProps> = ({ activeTab, onTabChange }) => {
   const tabs = Object.values(TabType);
 
@@ -22,7 +30,7 @@ const TabNav: React.FC<TabNavProps> = ({ activeTab, onTabChange }) => {
               ${activeTab === tab ? 'text-bronze' : 'text-gray-500 hover:text-gray-300'}
             `}
           >
-            {tab}
+            {TAB_LABELS[tab]}
             {activeTab === tab && (
               <span className="absolute bottom-0 left-0 w-full h-0.5 bg-bronze" />
             )}

@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { CaseStudy } from '../types';
-import { X, CheckCircle2, ListFilter, Cpu, Target } from 'lucide-react';
+import { X, CheckCircle2, ListFilter, Cpu, Target, ExternalLink } from 'lucide-react';
 
 interface CaseStudyModalProps {
   study: CaseStudy;
@@ -21,12 +21,25 @@ const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ study, onClose }) => {
             <span className="text-[10px] font-mono text-bronze uppercase tracking-widest">{study.organization}</span>
             <h2 className="text-xl md:text-2xl font-bold text-white uppercase tracking-wide">{study.title}</h2>
           </div>
-          <button 
-            onClick={onClose}
-            className="p-2 hover:bg-white/5 rounded-full text-gray-400 hover:text-white transition-colors"
-          >
-            <X size={24} />
-          </button>
+          <div className="flex items-center gap-3">
+            {study.liveUrl && (
+              <a
+                href={study.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-4 py-2 bg-bronze text-black text-xs font-bold uppercase tracking-widest hover:bg-white transition-colors"
+                onClick={(e) => e.stopPropagation()}
+              >
+                View Live <ExternalLink size={14} />
+              </a>
+            )}
+            <button
+              onClick={onClose}
+              className="p-2 hover:bg-white/5 rounded-full text-gray-400 hover:text-white transition-colors"
+            >
+              <X size={24} />
+            </button>
+          </div>
         </div>
 
         <div className="flex-1 overflow-y-auto p-6 md:p-10 space-y-12">

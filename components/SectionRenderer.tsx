@@ -45,7 +45,7 @@ const renderContent = (activeTab: TabType, onOpenCaseStudy: (slug: string) => vo
                 Program coordinator, AI literacy educator, and solo product builder with <span className="text-bronze font-normal">6+ years' experience</span> at the intersection of digital inclusion, education technology, and community development in Kenya. Scaled digital skills programs to 6,000+ learners, trained 700+ refugees with 60% employment outcomes through the Danish Refugee Council, and established a community tech hub serving 250+ users per month.
               </p>
               <p className="text-xl leading-relaxed text-gray-300 font-light">
-                Confirmed career lane: <span className="text-bronze font-normal">AI for Education & Digital Inclusion</span>. Also building independently — shipping live platforms that connect digital skills to real employment outcomes, and mapping Kenya's digital divide with data so stakeholders can act on it.
+                Specialising in <span className="text-bronze font-normal">AI for Education & Digital Inclusion</span> — with deep roots in program design, community training, and building live technology tools that translate digital access into real economic outcomes across Kenya.
               </p>
             </div>
             <div className="md:col-span-4">
@@ -118,10 +118,10 @@ const renderContent = (activeTab: TabType, onOpenCaseStudy: (slug: string) => vo
             <h3 className="text-2xl font-bold text-white uppercase tracking-widest mb-8 text-center">Career Vision</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
-                'Land a Project Manager / Senior Program Officer role in AI for Education & Digital Inclusion at an international NGO, UN agency, or EdTech social impact organisation',
-                'Become one of the top recognised voices in AI for Education in East Africa by 2030 — publishing, speaking, and building credibility in the ecosystem',
-                'Complete a Master\'s degree in Education & International Development to unlock senior leadership roles and broaden programmatic depth',
-                'Build toward a Deputy Director / Program Director role in AI Delivery for Africa — scaling evidence-based digital inclusion at continental level by 2031'
+                'Scale AI literacy and digital skills programs that directly improve learning and livelihood outcomes for youth across East Africa — moving from training rooms to measurable employment',
+                'Build the public evidence base for digital inclusion in Kenya — making connectivity gaps visible so NGOs, governments, and telcos act on data, not assumptions',
+                'Bridge the gap between digital skills training and real employment — because a trained youth without a job is a broken pipeline that the whole ecosystem needs to fix',
+                'Contribute to Kenya\'s AI governance conversation as a practitioner who has worked with 6,000+ learners on the ground — where policy meets reality'
               ].map((vision, idx) => (
                 <div key={idx} className="flex gap-4 p-6 bg-white/[0.02] border border-white/5 rounded-sm">
                   <span className="text-bronze font-mono">/0{idx + 1}</span>

@@ -14,6 +14,7 @@ export interface CaseStudy {
   duration: string;
   location: string;
   heroImage?: string;
+  liveUrl?: string;
   metrics: Metric[];
   challenge: {
     problem: string;

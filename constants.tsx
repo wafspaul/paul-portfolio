@@ -165,6 +165,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     role: 'Solo Builder & Data Analyst',
     duration: '2025–Present',
     location: 'Kenya — All 47 Counties',
+    liveUrl: 'https://kenya-connectivity-map.vercel.app',
     featured: true,
     metrics: [
       { value: '47', label: 'Counties Mapped' },
@@ -194,6 +195,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     role: 'Founder & Developer',
     duration: '2026–Present',
     location: 'Kenya',
+    liveUrl: 'https://kazi-pap.vercel.app',
     featured: true,
     metrics: [
       { value: 'Live', label: 'Deployed on Vercel' },
