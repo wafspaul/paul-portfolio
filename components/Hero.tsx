@@ -55,14 +55,15 @@ const Hero: React.FC = () => {
       </div>
 
       <div className="flex flex-col sm:flex-row gap-4 mb-12">
-        <a 
-          href="https://www.linkedin.com/in/paulwamocha/" 
-          target="_blank" 
+        <a
+          href="https://www.linkedin.com/in/paulwamocha/"
+          target="_blank"
           rel="noopener noreferrer"
+          aria-label="Connect with Paul Wamocha on LinkedIn"
           className="px-8 py-4 bg-bronze text-black font-bold uppercase tracking-widest rounded-sm hover:bg-white transition-colors flex items-center gap-2"
         >
           Let's Connect
-          <ArrowUpRight size={20} />
+          <ArrowUpRight size={20} aria-hidden="true" />
         </a>
         <a 
           href="mailto:wamochapaul@gmail.com"
@@ -73,11 +74,11 @@ const Hero: React.FC = () => {
       </div>
 
       <div className="flex gap-6">
-        <a href="https://www.linkedin.com/in/paulwamocha/" target="_blank" rel="noopener noreferrer" className="p-2 border border-white/10 rounded-full hover:border-bronze hover:text-bronze transition-all scale-100 hover:scale-110">
-          <Linkedin size={24} />
+        <a href="https://www.linkedin.com/in/paulwamocha/" target="_blank" rel="noopener noreferrer" aria-label="Paul Wamocha on LinkedIn" className="p-2 border border-white/10 rounded-full hover:border-bronze hover:text-bronze transition-all scale-100 hover:scale-110">
+          <Linkedin size={24} aria-hidden="true" />
         </a>
-        <a href="https://github.com/wafspaul" target="_blank" rel="noopener noreferrer" className="p-2 border border-white/10 rounded-full hover:border-bronze hover:text-bronze transition-all scale-100 hover:scale-110">
-          <Github size={24} />
+        <a href="https://github.com/wafspaul" target="_blank" rel="noopener noreferrer" aria-label="Paul Wamocha on GitHub" className="p-2 border border-white/10 rounded-full hover:border-bronze hover:text-bronze transition-all scale-100 hover:scale-110">
+          <Github size={24} aria-hidden="true" />
         </a>
       </div>
     </section>

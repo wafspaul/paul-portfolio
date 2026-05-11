@@ -19,11 +19,14 @@ const TabNav: React.FC<TabNavProps> = ({ activeTab, onTabChange }) => {
   const tabs = Object.values(TabType);
 
   return (
-    <nav className="sticky top-0 z-50 bg-[#0a0a0a]/80 backdrop-blur-md border-b border-white/10 no-print">
-      <div className="max-w-4xl mx-auto flex overflow-x-auto scrollbar-hide">
+    <nav className="sticky top-0 z-50 bg-[#0a0a0a]/80 backdrop-blur-md border-b border-white/10 no-print" aria-label="Portfolio sections">
+      <div className="max-w-4xl mx-auto flex overflow-x-auto scrollbar-hide" role="tablist">
         {tabs.map((tab) => (
           <button
             key={tab}
+            role="tab"
+            aria-selected={activeTab === tab}
+            aria-label={`View ${TAB_LABELS[tab]} section`}
             onClick={() => onTabChange(tab)}
             className={`
               flex-1 min-w-[120px] py-6 px-4 text-xs font-bold tracking-widest uppercase transition-all duration-300 relative
@@ -32,7 +35,7 @@ const TabNav: React.FC<TabNavProps> = ({ activeTab, onTabChange }) => {
           >
             {TAB_LABELS[tab]}
             {activeTab === tab && (
-              <span className="absolute bottom-0 left-0 w-full h-0.5 bg-bronze" />
+              <span className="absolute bottom-0 left-0 w-full h-0.5 bg-bronze" aria-hidden="true" />
             )}
           </button>
         ))}

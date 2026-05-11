@@ -84,8 +84,8 @@ const App: React.FC = () => {
       )}
 
       {/* Print View Helpers */}
-      <div className="hidden print:block print-only p-8 text-black bg-white font-serif">
-        <h1 className="text-4xl font-bold uppercase mb-2">Paul Wamocha</h1>
+      <div className="hidden print:block print-only p-8 text-black bg-white font-serif" aria-hidden="true">
+        <h2 className="text-4xl font-bold uppercase mb-2">Paul Wamocha</h2>
         <p className="text-lg mb-8">AI for Education & Digital Inclusion Specialist | Nairobi, Kenya</p>
         <div className="space-y-8">
           <section>

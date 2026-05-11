@@ -35,9 +35,10 @@ const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ study, onClose }) => {
             )}
             <button
               onClick={onClose}
+              aria-label="Close case study"
               className="p-2 hover:bg-white/5 rounded-full text-gray-400 hover:text-white transition-colors"
             >
-              <X size={24} />
+              <X size={24} aria-hidden="true" />
             </button>
           </div>
         </div>
