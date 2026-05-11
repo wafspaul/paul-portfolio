@@ -163,7 +163,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     title: 'Kenya Connectivity Map',
     organization: 'Independent Project',
     role: 'Solo Builder & Data Analyst',
-    duration: '2025–Present',
+    duration: 'March 2026–Present',
     location: 'Kenya — All 47 Counties',
     liveUrl: 'https://kenya-connectivity-map.vercel.app',
     featured: true,
@@ -193,29 +193,58 @@ export const CASE_STUDIES: CaseStudy[] = [
     title: 'Kazi Pap — AI Job Matching Platform',
     organization: 'Independent Product',
     role: 'Founder & Developer',
-    duration: '2026–Present',
+    duration: 'March 2026–Present',
     location: 'Kenya',
-    liveUrl: 'https://kazi-pap.vercel.app',
+    liveUrl: 'https://kazipap.co.ke',
     featured: true,
     metrics: [
-      { value: 'Live', label: 'Deployed on Vercel' },
-      { value: '18–30', label: 'Target Age Group (yrs)' }
+      { value: '10+', label: 'Beta Users — Stage 2 Complete' },
+      { value: '31', label: 'Curated Jobs Delivered Per Week' }
     ],
     challenge: {
       problem: '80% of Kenyan youth who complete digital skills training still cannot find work within 6 months. The gap is not in skills — it is in matching trained youth to real opportunities.',
       constraints: ['Youth distrust of job platforms', 'Informal gig market poorly indexed', 'Need for mobile-first, low-data experience']
     },
     approach: {
-      strategy: 'Built an AI-powered job matching platform using Google AI Studio and Firebase, connecting Kenyan youth aged 18–30 to gig and formal employment based on their skills profile.',
-      tools: ['Google AI Studio', 'Firebase', 'Vercel', 'GitHub (wafspaul/kazi-pap)'],
-      stakeholders: ['Kenyan youth job-seekers', 'Ajira Digital graduates', 'Small and medium employers']
+      strategy: 'Built an AI-powered job matching platform using Google AI Studio and Firebase, connecting Kenyan youth aged 18–30 to gig and formal employment based on their skills profile. A Vercel Cron pipeline delivers 31 curated remote-friendly jobs per week. Professional email infrastructure (admin@kazipap.co.ke) and a feedback notification system are live.',
+      tools: ['Google AI Studio', 'Firebase', 'Vercel', 'Resend', 'ImprovMX', 'Africa\'s Talking (SMS — planned)'],
+      stakeholders: ['Kenyan youth job-seekers', 'Ajira Digital graduates', 'Small and medium employers', 'Remote Jobs and You newsletter (partnership in progress)']
     },
     outcome: {
-      results: 'Platform live at kazi-pap.vercel.app. Currently in early user feedback stage — targeting first 10 real users before feature expansion.',
+      results: 'Platform live at kazipap.co.ke. Stage 2 complete — 10+ real users with feedback collected. Professional email infrastructure live. Cron pipeline delivering 31 curated jobs per week. Partnership conversation open with Remote Jobs and You newsletter. Now in Stage 3: fixing top user-reported issues and building SMS job alerts via Africa\'s Talking.',
       sustainability: 'Roadmap includes employer-side listings, premium user tier, and institutional partnerships with Ajira Digital and university career offices.',
       scalability: 'Grant funding targets include GSMA Connected Women Fund and Kenya ICT Authority Innovation Fund.'
     },
     tags: ['AI/ML', 'Youth Employment', 'Entrepreneurship'],
-    content: 'A job matching platform connecting Kenyan youth to gig and formal employment through AI-powered matching. Addresses the gap between digital skills training and employment outcomes — the same problem Paul trains people to solve. Live at kazi-pap.vercel.app.'
+    content: 'An AI-powered job matching platform connecting Kenyan youth to gig and formal employment — built from scratch in March 2026. Stage 2 complete with 10+ real beta users and structured feedback collected. Features a Vercel Cron pipeline delivering 31 curated jobs per week, professional email infrastructure, and a real-time feedback notification system. Partnership conversations underway with Remote Jobs and You newsletter. Live at kazipap.co.ke.'
+  },
+  {
+    slug: 'ai-governance-africa',
+    title: 'AI Governance Africa — Independent Research',
+    organization: 'Independent Research',
+    role: 'Researcher & Policy Advocate',
+    duration: 'March 2026–Present',
+    location: 'Kenya / East Africa',
+    featured: true,
+    metrics: [
+      { value: '17M', label: 'Kenyan Workers Analysed (ILO Data)' },
+      { value: '86%', label: 'Informal Workforce — the Governance Gap' }
+    ],
+    challenge: {
+      problem: 'AI automation is displacing workers in BPO, data services, and routine formal employment faster than existing governance structures can absorb — especially in Kenya where 86% of the workforce is informal and invisible to current protections.',
+      constraints: ['Fragmented public labour data', 'Governance frameworks designed for formal employment only', 'Speed of AI displacement outpacing policy development']
+    },
+    approach: {
+      strategy: 'Original independent research combining ILO and World Bank labour data, automation vulnerability modelling by occupation and education level, and AI bias analysis across gender and age lines in Kenya. Findings translated into a policy submission to Parliament and a public essay.',
+      tools: ['Python', 'Jupyter Notebooks', 'ILO Kenya Employment Data 2022', 'World Bank datasets', 'SHAP / scikit-learn'],
+      stakeholders: ['Parliament of Kenya (AI Bill 2026)', 'EdTech East Africa coalition', 'AU Digital Commission (future target)']
+    },
+    outcome: {
+      results: 'Submitted individual petition to Parliament of Kenya on AI Bill 2026, Section 33 (Workforce Impact) — arguing that informal workers are invisible to the clause as written and proposing three concrete amendments. Co-contributed to EdTech East Africa joint stakeholder memorandum. Full research essay (~1,650 words) complete. LinkedIn thought leadership post scheduled May 2026.',
+      sustainability: 'Research continues as a standing project — feeding into fellowship applications (GovAI, AISF), policy briefs targeting Kenya ICT Authority, and public writing to build governance credibility.',
+      scalability: 'Pathway: policy brief → AU Digital Commission → advisory committee access. Designed to position Paul as a credible AI governance voice grounded in practitioner-level implementation data.'
+    },
+    tags: ['AI Governance', 'Policy Research', 'Digital Inclusion'],
+    content: 'Original research on AI-driven job displacement as a systemic risk in African economies, with Kenya as primary case study. Central finding: 86% informality means Kenya\'s AI governance frameworks cannot reach the 7.5 million intermediate-band workers most exposed to automation. Includes three analytical sub-projects (automation vulnerability analysis, AI bias in education, AI bias in Kenyan names) and a completed policy submission to the Parliament of Kenya on the AI Bill 2026.'
   }
 ];

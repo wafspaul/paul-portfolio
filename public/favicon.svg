@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d0d0d;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4a017;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b8860b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Background rounded square -->
+  <rect width="64" height="64" rx="12" fill="url(#bg)"/>
+  <!-- Subtle border -->
+  <rect width="64" height="64" rx="12" fill="none" stroke="#d4a017" stroke-width="1.5" stroke-opacity="0.4"/>
+  <!-- P letter -->
+  <text
+    x="10"
+    y="46"
+    font-family="'JetBrains Mono', 'Courier New', monospace"
+    font-weight="700"
+    font-size="36"
+    letter-spacing="-2"
+    fill="url(#accent)"
+  >PW</text>
+  <!-- Accent underline dot -->
+  <circle cx="32" cy="57" r="3" fill="#d4a017" opacity="0.7"/>
+</svg>
