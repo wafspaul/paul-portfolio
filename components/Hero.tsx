@@ -66,7 +66,10 @@ const Hero: React.FC = () => {
           <ArrowUpRight size={20} aria-hidden="true" />
         </a>
         <a
-          href="mailto:wamochapaul@gmail.com"
+          href="https://calendly.com/paul-wamocha"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Book a consultation with Paul Wamocha on Calendly"
           className="px-8 py-4 border border-white/20 text-white font-bold uppercase tracking-widest rounded-sm hover:border-bronze hover:text-bronze transition-all"
         >
           Book a Consultation
