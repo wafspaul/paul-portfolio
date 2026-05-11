@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Mail, Linkedin, Github, Phone, MapPin, ArrowUpRight } from 'lucide-react';
+import { Mail, Linkedin, Github, Phone, MapPin, ArrowUpRight, Download } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
@@ -65,11 +65,20 @@ const Hero: React.FC = () => {
           Let's Connect
           <ArrowUpRight size={20} aria-hidden="true" />
         </a>
-        <a 
+        <a
           href="mailto:wamochapaul@gmail.com"
           className="px-8 py-4 border border-white/20 text-white font-bold uppercase tracking-widest rounded-sm hover:border-bronze hover:text-bronze transition-all"
         >
           Book a Consultation
+        </a>
+        <a
+          href="/paul-wamocha-cv.pdf"
+          download
+          aria-label="Download Paul Wamocha CV"
+          className="px-8 py-4 border border-bronze/40 text-bronze font-bold uppercase tracking-widest rounded-sm hover:bg-bronze hover:text-black transition-all flex items-center gap-2"
+        >
+          Download CV
+          <Download size={18} aria-hidden="true" />
         </a>
       </div>
 
