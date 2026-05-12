@@ -220,31 +220,33 @@ export const CASE_STUDIES: CaseStudy[] = [
   },
   {
     slug: 'ai-governance-africa',
-    title: 'AI Governance Africa — Independent Research',
+    title: 'AI Displacement in Kenya: A Governance Problem Disguised as an Economic One',
     organization: 'Independent Research',
-    role: 'Researcher & Policy Advocate',
-    duration: 'March 2026–Present',
-    location: 'Kenya / East Africa',
+    role: 'Researcher & Author',
+    duration: 'April–May 2026',
+    location: 'Nairobi, Kenya',
+    liveUrl: 'https://forum.effectivealtruism.org/posts/MfjuFPKxBiq4FdBkb/ai-displacement-in-kenya-a-governance-problem-disguised-as',
     featured: true,
     metrics: [
-      { value: '17M', label: 'Kenyan Workers Analysed (ILO Data)' },
-      { value: '86%', label: 'Informal Workforce — the Governance Gap' }
+      { value: '7.5M', label: 'Workers at Highest AI Exposure Risk' },
+      { value: '86%', label: 'Informal Workforce — Invisible to Governance' },
+      { value: '40K KES', label: 'Monthly Earnings Gap: Intermediate vs Advanced' }
     ],
     challenge: {
-      problem: 'AI automation is displacing workers in BPO, data services, and routine formal employment faster than existing governance structures can absorb — especially in Kenya where 86% of the workforce is informal and invisible to current protections.',
-      constraints: ['Fragmented public labour data', 'Governance frameworks designed for formal employment only', 'Speed of AI displacement outpacing policy development']
+      problem: 'AI-driven automation is displacing Kenyan workers who are invisible to the governance systems meant to protect them. 86% of the workforce is informal — outside the reach of labour law, retraining programmes, and social protection. When displacement happens, no institution registers the loss.',
+      constraints: ['Governance mechanisms reach only 14% of workers', 'No data system captures informal displacement as an AI governance event', 'Female youth carry disproportionate exposure with least institutional weight']
     },
     approach: {
-      strategy: 'Original independent research combining ILO and World Bank labour data, automation vulnerability modelling by occupation and education level, and AI bias analysis across gender and age lines in Kenya. Findings translated into a policy submission to Parliament and a public essay.',
-      tools: ['Python', 'Jupyter Notebooks', 'ILO Kenya Employment Data 2022', 'World Bank datasets', 'SHAP / scikit-learn'],
-      stakeholders: ['Parliament of Kenya (AI Bill 2026)', 'EdTech East Africa coalition', 'AU Digital Commission (future target)']
+      strategy: 'Original independent research built on ILO and World Bank data on Kenyan labour markets. Maps the pathway from labour market disruption to governance legitimacy loss. Three concrete governance interventions proposed: a live labour dashboard, sector-specific risk registries, and portable benefits not tied to formal employment.',
+      tools: ['Python', 'Jupyter Notebooks', 'ILO ILOSTAT Kenya 2022', 'World Bank WDI', 'SHAP / scikit-learn'],
+      stakeholders: ['Parliament of Kenya (AI Bill 2026)', 'Kenya ICT Authority', 'AU Digital Commission', 'GovAI / AISF Fellowship Programs']
     },
     outcome: {
-      results: 'Submitted individual petition to Parliament of Kenya on AI Bill 2026, Section 33 (Workforce Impact) — arguing that informal workers are invisible to the clause as written and proposing three concrete amendments. Co-contributed to EdTech East Africa joint stakeholder memorandum. Full research essay (~1,650 words) complete. LinkedIn thought leadership post scheduled May 2026.',
-      sustainability: 'Research continues as a standing project — feeding into fellowship applications (GovAI, AISF), policy briefs targeting Kenya ICT Authority, and public writing to build governance credibility.',
-      scalability: 'Pathway: policy brief → AU Digital Commission → advisory committee access. Designed to position Paul as a credible AI governance voice grounded in practitioner-level implementation data.'
+      results: 'Full research essay published May 2026 on the EA Forum and LinkedIn newsletter. Senate submission made on Kenya AI Bill 2026 Section 33 — arguing informal workers are invisible to the clause and proposing three concrete amendments. Fellowship applications to GovAI and AISF in progress.',
+      sustainability: 'Public research with full references and reproducible ILO indicator codes. Feeds directly into fellowship applications and policy briefs targeting the Kenya ICT Authority and AU Digital Commission.',
+      scalability: 'Governance framework is applicable to other African economies with high informality rates. Sub-projects on automation vulnerability, AI bias in education, and AI bias in Kenyan names extend the analysis.'
     },
-    tags: ['AI Governance', 'Policy Research', 'Digital Inclusion'],
-    content: 'Original research on AI-driven job displacement as a systemic risk in African economies, with Kenya as primary case study. Central finding: 86% informality means Kenya\'s AI governance frameworks cannot reach the 7.5 million intermediate-band workers most exposed to automation. Includes three analytical sub-projects (automation vulnerability analysis, AI bias in education, AI bias in Kenyan names) and a completed policy submission to the Parliament of Kenya on the AI Bill 2026.'
+    tags: ['AI Governance', 'Policy Research', 'Labour Markets'],
+    content: 'Independent research examining AI-driven labour displacement in Kenya as a governance risk pathway. Central finding: 86% informality means the Kenya National AI Strategy cannot reach the 7.5 million workers most exposed to automation. The essay maps how displacement becomes invisible to governance systems — and proposes three concrete interventions grounded in existing Kenyan infrastructure. Published on the EA Forum and LinkedIn. Senate submission on the AI Bill 2026 completed.'
   }
 ];
