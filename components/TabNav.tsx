@@ -13,6 +13,7 @@ const TAB_LABELS: Record<TabType, string> = {
   [TabType.IMPACT]: 'IMPACT',
   [TabType.INNOVATIONS]: 'INNOVATIONS',
   [TabType.TRAINING]: 'TRAINING',
+  [TabType.PUBLICATIONS]: 'PUBLICATIONS',
 };
 
 const TabNav: React.FC<TabNavProps> = ({ activeTab, onTabChange }) => {

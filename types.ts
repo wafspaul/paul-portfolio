@@ -61,10 +61,20 @@ export interface Expertise {
   tags: string[];
 }
 
+export interface Publication {
+  title: string;
+  date: string;
+  type: 'Essay' | 'Policy Submission' | 'Newsletter' | 'Forum Post' | 'Policy Brief';
+  description: string;
+  links: { label: string; url: string }[];
+  tags: string[];
+}
+
 export enum TabType {
   BIO = 'BIO',
   COMMUNITY = 'COMMUNITY',
   IMPACT = 'IMPACT',
   INNOVATIONS = 'INNOVATIONS',
-  TRAINING = 'TRAINING'
+  TRAINING = 'TRAINING',
+  PUBLICATIONS = 'PUBLICATIONS'
 }

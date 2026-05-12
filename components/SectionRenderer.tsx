@@ -2,7 +2,7 @@
 import React from 'react';
 import { TabType } from '../types';
 import ImpactDashboard from './ImpactDashboard';
-import { CASE_STUDIES, PARTNERSHIPS, TRAINING, IDENTITY_CARDS, EXPERTISE } from '../constants';
+import { CASE_STUDIES, PARTNERSHIPS, TRAINING, IDENTITY_CARDS, EXPERTISE, PUBLICATIONS } from '../constants';
 import { ArrowUpRight, ExternalLink, Target, Cpu, Users, GraduationCap, CheckCircle2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -246,9 +246,59 @@ const renderContent = (activeTab: TabType, onOpenCaseStudy: (slug: string) => vo
         </div>
       );
 
+    case TabType.PUBLICATIONS:
+      return (
+        <div className="py-12 space-y-10">
+          <div className="flex items-center gap-4">
+            <div className="h-px flex-1 bg-white/10" />
+            <h3 className="text-2xl font-bold text-white uppercase tracking-widest">Publications & Writing</h3>
+            <div className="h-px flex-1 bg-white/10" />
+          </div>
+          <div className="space-y-6">
+            {PUBLICATIONS.map((pub, idx) => (
+              <div key={idx} className="group p-8 bg-[#111] border border-white/5 rounded-sm hover:border-bronze transition-all">
+                <div className="flex flex-wrap items-center gap-4 mb-4">
+                  <span className="px-3 py-1 bg-bronze/10 text-bronze text-[10px] font-bold uppercase tracking-widest border border-bronze/20">
+                    {pub.type}
+                  </span>
+                  <span className="text-xs font-mono text-gray-500">{pub.date}</span>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-4 leading-snug group-hover:text-bronze transition-colors">
+                  {pub.title}
+                </h3>
+                <p className="text-sm text-gray-400 leading-relaxed mb-6">
+                  {pub.description}
+                </p>
+                <div className="flex flex-wrap items-center gap-4">
+                  {pub.links.map((link, i) => (
+                    <a
+                      key={i}
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`Open ${link.label} in a new tab`}
+                      className="flex items-center gap-2 px-4 py-2 border border-bronze/40 text-bronze text-xs uppercase tracking-widest hover:bg-bronze/10 transition-colors"
+                    >
+                      {link.label}
+                      <ExternalLink size={12} />
+                    </a>
+                  ))}
+                  <div className="flex flex-wrap gap-2 ml-auto">
+                    {pub.tags.map(tag => (
+                      <span key={tag} className="px-2 py-1 bg-white/5 text-[9px] text-gray-500 uppercase tracking-widest">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      );
+
     default:
       return null;
   }
 };
-
 export default SectionRenderer;
