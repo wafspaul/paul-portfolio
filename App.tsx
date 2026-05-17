@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import Hero from './components/Hero';
 import TabNav from './components/TabNav';
 import GeometricBackground from './components/GeometricBackground';
@@ -95,6 +96,8 @@ const App: React.FC = () => {
           {/* Add more print sections as needed */}
         </div>
       </div>
+
+      <Analytics />
     </div>
   );
 };
